@@ -6,8 +6,6 @@ async function main() {
     const HostCoin = await ethers.getContractFactory("HostCoin");
     const hostCoin = await HostCoin.deploy(1000000);
   
-    await hostCoin.deployed();
-  
     console.log("HostCoin deployed to:", hostCoin.address);
   }
   
